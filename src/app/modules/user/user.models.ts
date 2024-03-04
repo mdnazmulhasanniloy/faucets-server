@@ -3,8 +3,6 @@ import { IUser, UserModel } from './user.interface';
 
 const userSchema = new Schema<IUser>(
   {
-    id: { type: 'string', required: true, unique: true },
-
     email: { type: 'string', required: true, unique: true },
     name: { type: 'string', required: true },
     imgUrl: {
